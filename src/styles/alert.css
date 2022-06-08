@@ -1,0 +1,108 @@
+.toast {
+  position: absolute;
+  z-index: 9999;
+  bottom: 2rem;
+  left: 2rem;
+  background: #0d1116;
+  width: fit-content;
+  padding: 1rem 1rem 1rem 0.8rem;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+  animation: fade 1s, fadeOut 1s 1.5s;
+  border-radius: 5px;
+}
+
+.toast-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.toast-content > svg {
+  margin-right: 0.5rem;
+}
+
+.toast-content > span {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-width: 17rem;
+  line-height: 1.5rem;
+}
+
+.border-green {
+  border-left: #28d369 solid 0.3rem;
+}
+
+.border-red {
+  border-left: #d32828 solid 0.3rem;
+}
+
+.ctn-popup {
+  display: grid;
+  position: absolute;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.411);
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  place-content: center;
+}
+
+/* popup */
+.popup {
+  display: block;
+  background: var(--primary-color);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  min-width: 250px;
+}
+
+.close-popup {
+  color: gray;
+  font-size: 2.2rem;
+  cursor: pointer;
+  float: right;
+}
+
+.close-popup:hover {
+  color: rgb(224, 224, 224);
+}
+
+.popup > .card > .body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card > .title {
+  color: rgb(168, 168, 168);
+  font-size: 1.3rem;
+  margin: 0.5rem 0rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

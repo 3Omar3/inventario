@@ -1,0 +1,356 @@
+.img-logo {
+  width: 5rem;
+}
+
+.popup-btn {
+  width: 100%;
+  background: var(--secondary-color) !important;
+  color: var(--text-placeholder);
+  background: none;
+  padding: 0.8rem 0rem;
+  margin-top: 0.5rem;
+}
+
+.ctn-input-grid {
+  display: grid;
+  grid-template-columns: minmax(1rem, 1fr) minmax(1rem, 1fr);
+  grid-gap: 0.5rem 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.ctn-input > input,
+textarea {
+  font-size: 1rem;
+  color: var(--text-high);
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 0.3rem;
+  height: 40px;
+  padding: 0.2rem 0.5rem;
+  outline: none !important;
+  margin: 0.6rem 0rem 1rem 0rem;
+  display: grid;
+  width: -webkit-fill-available;
+  border: 1px solid var(--secondary-color);
+}
+
+.ctn-input > textarea {
+  height: 100px;
+  resize: none;
+  resize: vertical;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  max-height: 33vh !important;
+}
+
+.ctn-input > input:hover,
+textarea:hover {
+  outline: none !important;
+  border: 1px solid var(--border-hover);
+}
+
+.ctn-input > span {
+  color: var(--title-input);
+}
+
+.ctn-tb {
+  display: grid;
+  place-content: start center;
+  padding: 2rem 0rem 0rem 2rem;
+}
+
+.ctn-options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ctn-options > .ctn-buttons > button {
+  background: none;
+  border: solid #151c24 1.5px;
+}
+
+.ctn-options > .ctn-buttons > button:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.tb {
+  border-radius: 1rem !important;
+  border-collapse: collapse;
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.tb-head {
+  background: var(--third-color);
+  display: block;
+}
+
+.tb-head > tr > th:first-child {
+  padding-left: 0.8rem;
+}
+
+.tb-head > tr > th {
+  font-weight: 500;
+  color: var(--text-high);
+  padding: 1.2rem 1rem;
+  letter-spacing: 0.05rem;
+  text-align: right;
+}
+
+.tb-body {
+  background: var(--secondary-color);
+  cursor: pointer;
+  display: block;
+  height: 77vh;
+  overflow-y: scroll;
+}
+
+.tb-body > tr > td:first-child {
+  padding-left: 0.5rem;
+}
+
+.tb-body > tr > td:last-child {
+  padding-right: 1.2rem;
+}
+
+.tb-body > tr > td {
+  color: var(--text-table-field);
+  font-weight: 500;
+  padding: 1.2rem 2rem;
+  padding-right: 1rem;
+  letter-spacing: 0.05rem;
+  text-align: right;
+  border-top: var(--primary-color) solid 0.1rem;
+}
+
+.tb-body > tr:hover {
+  background: var(--primary-color);
+}
+
+.hide-overflow-text {
+  white-space: nowrap;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.th-code {
+  min-width: 7.5rem;
+  max-width: 7.5rem;
+}
+
+.th-name {
+  min-width: 10rem;
+  max-width: 10rem;
+}
+
+.th-des {
+  min-width: 12rem;
+  max-width: 12rem;
+}
+
+.th-price {
+  min-width: 5rem;
+  max-width: 5rem;
+}
+
+.th-amount {
+  min-width: 5rem;
+  max-width: 5rem;
+}
+
+.th-actions {
+  text-align: center !important;
+  min-width: 5.8rem;
+  max-width: 5.8rem;
+}
+
+.th-actions > div > svg:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.th-actions > div > svg:hover {
+  transition: all ease-in 0.2s;
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+.chip-red {
+  color: white;
+  background: #d32828;
+  width: fit-content;
+  padding: 0.1rem 1rem;
+  border-radius: 4.5rem;
+  display: inline;
+}
+
+.chip-yellow {
+  color: white;
+  background: #d35828;
+  width: fit-content;
+  padding: 0.1rem 1rem;
+  border-radius: 4.5rem;
+  display: inline;
+}
+
+.chip-green {
+  color: white;
+  background: #28d369;
+  width: fit-content;
+  padding: 0.1rem 1rem;
+  border-radius: 4.5rem;
+  display: inline;
+}
+
+.txtSearch {
+  margin-right: 1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 0.8rem;
+  color: rgb(175, 175, 175);
+  font-size: 1rem;
+  display: flex;
+  flex: 1;
+  background: none;
+  border: solid #151c24 1.5px;
+}
+
+.txtSearch::placeholder {
+  color: rgb(175, 175, 175);
+  font-size: 1rem;
+}
+
+.txtSearch:focus {
+  outline: none !important;
+  border: 2px solid var(--border-hover);
+}
+
+.btn {
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: all ease-in 0.2s;
+  border: 1px solid var(--secondary-color);
+}
+
+.btn:focus {
+  outline: none !important;
+  border: 0.1rem solid var(--border-hover) !important;
+}
+
+.btn-outline {
+  background: none;
+  border: solid #0f141a 1.5px;
+}
+
+.btn:hover {
+  transition: all ease-in 0.2s;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.hover-text-blue:hover {
+  color: rgb(69, 128, 238) !important;
+}
+
+.hover-text-orange:hover {
+  color: #d35828 !important;
+}
+
+.hover-text-red:hover {
+  color: #e73838 !important;
+}
+
+.hover-blue:hover {
+  background: rgb(63, 135, 243) !important;
+  color: white;
+}
+
+.hover-green:hover {
+  background: #28d369 !important;
+  color: white;
+}
+
+.hover-orange:hover {
+  background: rgb(248, 162, 91) !important;
+  color: white;
+}
+
+.hover-red:hover {
+  background: #d32828 !important;
+  color: white;
+}
+
+#btn-in:hover {
+  background: rgb(63, 135, 243);
+  color: white;
+}
+
+#btn-in {
+  margin-right: 1rem;
+}
+
+#btn-out:hover {
+  background: rgb(248, 162, 91);
+  color: white;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-white-200 {
+  color: rgb(182, 182, 182);
+}
+
+.text-gray {
+  color: rgb(175, 175, 175);
+}
+
+.text-green {
+  color: #28d369;
+}
+
+.text-blue {
+  color: rgb(63, 135, 243);
+}
+
+.text-orange {
+  color: rgb(248, 162, 91);
+}
+
+.text-red {
+  color: #d32828;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-gray-200 {
+  color: rgb(53 53 53);
+}
+
+.bg-black {
+  background: #0f141a;
+}
+
+.bg-green {
+  background: #28d369;
+}
+
+.bg-purple {
+  background: rgb(63, 135, 243);
+}
+
+.bg-orange {
+  background: rgb(248, 162, 91);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
